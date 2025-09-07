@@ -10,14 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg: #000000;
-      --card: #111111;
-      --card-2: #0f0f0f;
-      --text: #00ff00;
-      --muted: #33ff33;
-      --acc: #00ff00;
-      --chip: #1a1a1a;
-      --line: #333333;
+      --bg: #0b0c10;
+      --card: #111218;
+      --card-2: #0f1117;
+      --text: #f3f4f6;
+      --muted: #a3a7b3;
+      --acc: #60a5fa;
+      --chip: #1f2937;
+      --line: #1f2430;
     }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;}
@@ -28,7 +28,7 @@
     .name{font-size:clamp(28px,4vw,40px);line-height:1.1;font-weight:800}
     .subtitle{color:var(--muted);font-weight:500}
     .contact{display:flex;flex-wrap:wrap;gap:10px}
-    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:var(--chip);color:var(--text);font-weight:500}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:var(--chip);color:#e5e7eb;font-weight:500}
     .grid{display:grid;grid-template-columns:1fr;gap:16px}
     @media (min-width:900px){.grid{grid-template-columns:1.2fr 0.8fr}}
     section{background:linear-gradient(180deg,var(--card),var(--card-2));border:1px solid var(--line);border-radius:18px;padding:20px}
@@ -37,27 +37,289 @@
     .prose{line-height:1.6}
     .items{display:flex;flex-direction:column;gap:14px}
     .role{display:flex;gap:14px;align-items:flex-start}
-    .r-bullet{width:8px;height:8px;margin-top:9px;border-radius:2px;background:var(--acc);box-shadow:0 0 0 3px rgba(0,255,0,.15)}
+    .r-bullet{width:8px;height:8px;margin-top:9px;border-radius:2px;background:var(--acc);box-shadow:0 0 0 3px rgba(96,165,250,.15)}
     .r-body{flex:1}
     .r-top{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between}
     .r-title{font-weight:700}
-    .r-org{color:var(--muted)}
+    .r-org{color:#cbd5e1}
     .r-time{color:var(--muted);font-weight:500}
     ul{margin:8px 0 0 22px;}
     li{margin:6px 0}
     .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-    .chip{padding:6px 10px;border-radius:10px;background:var(--chip);font-size:13px;color:var(--text);border:1px solid var(--line)}
+    .chip{padding:6px 10px;border-radius:10px;background:var(--chip);font-size:13px;color:#e5e7eb;border:1px solid var(--line)}
     footer{margin:26px 0 10px;color:var(--muted);text-align:center;font-size:14px}
-    .sr{border:1px dashed var(--line);padding:12px;border-radius:12px;background:rgba(0,255,0,.05)}
-    .print{position:fixed;right:18px;bottom:18px;border:none;background:var(--acc);color:#000;padding:10px 14px;border-radius:999px;font-weight:700;cursor:pointer}
+    .sr{border:1px dashed var(--line);padding:12px;border-radius:12px;background:rgba(255,255,255,.02)}
+    .print{position:fixed;right:18px;bottom:18px;border:none;background:var(--acc);color:#0b1220;padding:10px 14px;border-radius:999px;font-weight:700;cursor:pointer}
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Zaman Wasim",
+    "email": "mailto:muhammad.wasim@hotmail.co.uk",
+    "telephone": "+44 7502622819",
+    "nationality": "British",
+    "url": "https://www.linkedin.com/in/muhammadzamanwasim",
+    "jobTitle": "Azure / DevOps Engineer",
+    "knowsAbout": [
+      "Azure DevOps","Terraform","Bicep","ARM templates","AKS","Docker","Azure Networking","Azure Virtual Desktop","PowerShell","Bash","YAML","GitOps","CI/CD","Aqua Security","Cosmos DB","Key Vault","Jenkins","OpenShift"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Essex",
+      "sameAs": "https://www.essex.ac.uk/"
+    }
+  }
+  </script>
 </head>
 <body>
-  <!-- Body content unchanged -->
   <div class="wrap">
-    <!-- Existing content here -->
+    <header>
+      <div>
+        <div class="name">Muhammad Zaman Wasim</div>
+        <div class="subtitle">Azure / DevOps Engineer</div>
+      </div>
+      <div class="contact">
+        <a class="pill" href="mailto:muhammad.wasim@hotmail.co.uk" aria-label="Email">✉️ Email</a>
+        <a class="pill" href="tel:+447502622819" aria-label="Phone">📞 +44 7502 622819</a>
+        <a class="pill" href="https://www.linkedin.com/in/muhammadzamanwasim" rel="noopener" aria-label="LinkedIn">🔗 LinkedIn</a>
+      </div>
+    </header>
+
+    <div class="grid">
+      <!-- Left column -->
+      <section>
+        <h2>Profile</h2>
+        <p class="prose">Certified Microsoft Azure professional with extensive experience delivering and managing cloud infrastructure and CI/CD pipelines in large-scale enterprise environments. Skilled in Azure DevOps, Terraform, Bicep, and ARM templates to build secure, scalable, and resilient cloud solutions—particularly within the energy and IT sectors, including mission‑critical trading platforms. Proficient in PowerShell, Bash, and YAML with a strong focus on automation, infrastructure as code, and Git-based workflows. Recognized for proactive monitoring, effective incident response, and the ability to troubleshoot and optimize for performance, reliability, and operational efficiency.</p>
+      </section>
+
+      <!-- Right column -->
+      <section>
+        <h2>Quick Info</h2>
+        <div class="sr">
+          <div><strong>Location:</strong> United Kingdom</div>
+          <div><strong>Nationality:</strong> British</div>
+          <div><strong>Availability:</strong> Open to opportunities</div>
+          <div><strong>References:</strong> Available on request</div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section style="grid-column:1/-1">
+        <h2>Experience</h2>
+        <div class="items">
+          <div class="role">
+            <div class="r-bullet" aria-hidden="true"></div>
+            <div class="r-body">
+              <div class="r-top">
+                <div class="r-title">DevOps Engineer <span class="r-org">· Valorem Reply</span></div>
+                <div class="r-time">Apr 2022 – Present</div>
+              </div>
+              <ul>
+                <li>Managed Agile projects with Azure DevOps, Git repos, and CI/CD for seamless releases.</li>
+                <li>Provisioned and maintained Azure infrastructure via Terraform & GitOps, following IaC best practices.</li>
+                <li>Administered AVD and Azure networking (Firewall, App Gateway + WAF, NSGs, subnets).</li>
+                <li>Automated Azure VM provisioning with Terraform for consistency and scale.</li>
+                <li>Built Pipeline‑as‑Code with branching strategies & shared DSL, enabling feature toggles.</li>
+                <li>Containerized apps with Docker, publishing to Azure Container Registry; orchestrated on AKS.</li>
+                <li>Implemented container security with Aqua Security (vulnerability scanning & compliance).</li>
+                <li>Worked with Azure Functions, Blob/Queue Storage, Cosmos DB, and Key Vault.</li>
+                <li>Championed DevOps culture: CI, CD, and iterative delivery in Agile teams.</li>
+              </ul>
+              <div class="chips">
+                <span class="chip">Azure DevOps</span><span class="chip">Terraform</span><span class="chip">AKS</span><span class="chip">ACR</span><span class="chip">Azure Networking</span><span class="chip">Aqua Security</span><span class="chip">IaC</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="role">
+            <div class="r-bullet" aria-hidden="true"></div>
+            <div class="r-body">
+              <div class="r-top">
+                <div class="r-title">Azure Engineer <span class="r-org">· Blue Prism Limited</span></div>
+                <div class="r-time">Nov 2021 – Apr 2022</div>
+              </div>
+              <ul>
+                <li>Designed & deployed secure Azure infrastructure using ARM templates across SDLC stages.</li>
+                <li>Built end‑to‑end CI/CD in Azure DevOps to automate build, test, and deployment.</li>
+                <li>Focused on availability, security, and compliance across compute, networking, storage, monitoring.</li>
+                <li>Automated with PowerShell & Bash; YAML for version‑controlled infra and pipelines.</li>
+              </ul>
+              <div class="chips">
+                <span class="chip">ARM</span><span class="chip">PowerShell</span><span class="chip">Bash</span><span class="chip">YAML</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="role">
+            <div class="r-bullet" aria-hidden="true"></div>
+            <div class="r-body">
+              <div class="r-top">
+                <div class="r-title">DevOps Analyst <span class="r-org">· BP (British Petroleum)</span></div>
+                <div class="r-time">Oct 2019 – Oct 2021</div>
+              </div>
+              <ul>
+                <li>Operated CI/CD platforms (Azure DevOps, Jenkins) to deliver automated pipelines.</li>
+                <li>Designed, containerized, and deployed microservices with Docker on AKS.</li>
+                <li>Worked across AWS & Azure for HA and cost optimization.</li>
+                <li>Embedded DevSecOps tooling (Checkmarx, Black Duck) for early vulnerability detection.</li>
+                <li>Automated infra & ops with Bash, PowerShell, and YAML.</li>
+                <li>Deployed/managed enterprise apps on Red Hat OpenShift 4.2 (Operators, Helm, Pipelines).</li>
+              </ul>
+              <div class="chips">
+                <span class="chip">Jenkins</span><span class="chip">AKS</span><span class="chip">AWS</span><span class="chip">DevSecOps</span><span class="chip">OpenShift</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="role">
+            <div class="r-bullet" aria-hidden="true"></div>
+            <div class="r-body">
+              <div class="r-top">
+                <div class="r-title">Trading Operations Analyst <span class="r-org">· BP (British Petroleum)</span></div>
+                <div class="r-time">Aug 2014 – Sep 2019</div>
+              </div>
+              <ul>
+                <li>IT operations support for traders & executives at BP IST; rapid incident triage & resolution.</li>
+                <li>Maintained high compliance standards; reduced downtime with disciplined break‑fix response.</li>
+                <li>Supported trading apps (Reuters, X_Trader, Bloomberg), hardware & mobile device mgmt.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="role">
+            <div class="r-bullet" aria-hidden="true"></div>
+            <div class="r-body">
+              <div class="r-top">
+                <div class="r-title">Deployment Support Engineer <span class="r-org">· BP (British Petroleum)</span></div>
+                <div class="r-time">Apr 2011 – Jul 2014</div>
+              </div>
+              <ul>
+                <li>Managed AD & Group Policies; delivered 2nd/3rd line support for traders & internal teams.</li>
+                <li>Installed trading apps (X_Trader, Bloomberg, Reuters Eikon, Web ICE, ICE Chat, OCS).</li>
+                <li>Handled encryption (Sophos, WAVE) on SED / non‑SED drives; VMware ops via vCenter.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="role">
+            <div class="r-bullet" aria-hidden="true"></div>
+            <div class="r-body">
+              <div class="r-top">
+                <div class="r-title">Installation / Migration Engineer <span class="r-org">· BT Openreach</span></div>
+                <div class="r-time">Jan 2010 – Feb 2011</div>
+              </div>
+              <ul>
+                <li>Installed ADSL/broadband; configured VLANs and Cisco routing/switching (OSPF, ACLs, NAT/PAT).</li>
+                <li>Commissioned & tested LLU circuits across multi‑vendor environments.</li>
+              </ul>
+              <div class="chips">
+                <span class="chip">Cisco</span><span class="chip">OSPF</span><span class="chip">ACLs</span><span class="chip">NAT/PAT</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="role">
+            <div class="r-bullet" aria-hidden="true"></div>
+            <div class="r-body">
+              <div class="r-top">
+                <div class="r-title">1st/2nd Line Support Engineer <span class="r-org">· Systems Intellect (UK)</span></div>
+                <div class="r-time">Jul 2008 – Dec 2009</div>
+              </div>
+              <ul>
+                <li>Provided 1st/2nd line support on‑site & remote; network troubleshooting for clients.</li>
+                <li>Configured PPPoE/PPPoA, DSL routers; managed VLANs; monitored bandwidth (Cricket, MRTG).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="role">
+            <div class="r-bullet" aria-hidden="true"></div>
+            <div class="r-body">
+              <div class="r-top">
+                <div class="r-title">IT & Security Support Engineer <span class="r-org">· Switch Lab, London</span></div>
+                <div class="r-time">Jul 2007 – Jun 2008</div>
+              </div>
+              <ul>
+                <li>Managed access‑layer networks; desktop support; AV/anti‑spam implementation.</li>
+                <li>Monitored email systems; PBX & Fax management; VPN‑based network security.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section>
+        <h2>Certifications</h2>
+        <ul>
+          <li>Microsoft Certified: <strong>Azure Administrator Associate (AZ‑104)</strong></li>
+          <li>Microsoft Certified: <strong>DevOps Engineer Expert (AZ‑400)</strong></li>
+          <li>Microsoft Certified: <strong>Azure Solutions Architect Expert (AZ‑305)</strong></li>
+          <li>HashiCorp Certified: <strong>Terraform Associate</strong></li>
+        </ul>
+      </section>
+
+      <!-- Skills -->
+      <section>
+        <h2>Key Skills</h2>
+        <div class="chips">
+          <span class="chip">Azure</span>
+          <span class="chip">Azure DevOps</span>
+          <span class="chip">Terraform</span>
+          <span class="chip">Bicep</span>
+          <span class="chip">ARM Templates</span>
+          <span class="chip">AKS</span>
+          <span class="chip">Docker</span>
+          <span class="chip">Git / GitOps</span>
+          <span class="chip">CI/CD</span>
+          <span class="chip">Networking</span>
+          <span class="chip">Azure Firewall</span>
+          <span class="chip">App Gateway (WAF)</span>
+          <span class="chip">NSGs</span>
+          <span class="chip">Virtual Desktop (AVD)</span>
+          <span class="chip">PowerShell</span>
+          <span class="chip">Bash</span>
+          <span class="chip">YAML</span>
+          <span class="chip">Cosmos DB</span>
+          <span class="chip">Key Vault</span>
+          <span class="chip">Aqua Security</span>
+          <span class="chip">Jenkins</span>
+          <span class="chip">OpenShift</span>
+          <span class="chip">Helm</span>
+          <span class="chip">Pipelines</span>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section>
+        <h2>Education</h2>
+        <div class="items">
+          <div>
+            <div class="r-top">
+              <div class="r-title">MSc, Computer and Information Networks <span class="r-org">· University of Essex, Colchester, UK</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Legal / Classification -->
+      <section>
+        <h2>Notes</h2>
+        <p class="muted">Data Classification: Public</p>
+      </section>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Muhammad Zaman Wasim · <a href="https://www.linkedin.com/in/muhammadzamanwasim" rel="noopener">LinkedIn</a>
+    </footer>
   </div>
+
+  <button class="print" onclick="window.print()">Print / Save PDF</button>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
 
