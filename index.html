@@ -5,52 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Muhammad Zaman Wasim — CV</title>
   <meta name="description" content="CV of Muhammad Zaman Wasim — Azure / DevOps Engineer" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg: #0b0c10;
-      --card: #111218;
-      --card-2: #0f1117;
-      --text: #f3f6f4;
-      --muted: #a3a7b3;
-      --acc: #60a5fa;
-      --chip: #1f2937;
-      --line: #1f2430;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;}
-    a{color:var(--acc);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1000px;margin:0 auto;padding:28px}
-    header{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;justify-content:space-between;margin-bottom:22px}
-    .name{font-size:clamp(28px,4vw,40px);line-height:1.1;font-weight:800}
-    .subtitle{color:var(--muted);font-weight:500}
-    .contact{display:flex;flex-wrap:wrap;gap:10px}
-    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:var(--chip);color:#e5e7eb;font-weight:500}
-    .grid{display:grid;grid-template-columns:1fr;gap:16px}
-    @media (min-width:900px){.grid{grid-template-columns:1.2fr 0.8fr}}
-    section{background:linear-gradient(180deg,var(--card),var(--card-2));border:1px solid var(--line);border-radius:18px;padding:20px}
-    h2{margin:0 0 12px;font-size:18px;letter-spacing:.3px}
-    .muted{color:var(--muted)}
-    .prose{line-height:1.6}
-    .items{display:flex;flex-direction:column;gap:14px}
-    .role{display:flex;gap:14px;align-items:flex-start}
-    .r-bullet{width:8px;height:8px;margin-top:9px;border-radius:2px;background:var(--acc);box-shadow:0 0 0 3px rgba(96,165,250,.15)}
-    .r-body{flex:1}
-    .r-top{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between}
-    .r-title{font-weight:700}
-    .r-org{color:#cbd5e1}
-    .r-time{color:var(--muted);font-weight:500}
-    ul{margin:8px 0 0 22px;}
-    li{margin:6px 0}
-    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-    .chip{padding:6px 10px;border-radius:10px;background:var(--chip);font-size:13px;color:#e5e7eb;border:1px solid var(--line)}
-    footer{margin:26px 0 10px;color:var(--muted);text-align:center;font-size:14px}
-    .sr{border:1px dashed var(--line);padding:12px;border-radius:12px;background:rgba(255,255,255,.02)}
-    .print{position:fixed;right:18px;bottom:18px;border:none;background:var(--acc);color:#0b1220;padding:10px 14px;border-radius:999px;font-weight:700;cursor:pointer}
-  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -90,7 +53,7 @@
       <!-- Left column -->
       <section>
         <h2>Profile</h2>
-        <p class="prose">Certified Microsoft Azure professional with extensive experience delivering and managing cloud infrastructure and CI/CD pipelines in large-scale enterprise environments. Skilled in Azure DevOps, Terraform, Bicep, and ARM templates to build secure, scalable, and resilient cloud solutions—particularly within the energy and IT sectors, including mission‑critical trading platforms. Proficient in PowerShell, Bash, and YAML with a strong focus on automation, infrastructure as code, and Git-based workflows. Recognized for proactive monitoring, effective incident response, and the ability to troubleshoot and optimize for performance, reliability, and operational efficiency.</p>
+        <p class="prose">Certified Microsoft Azure professional with extensive experience delivering and managing cloud infrastructure and CI/CD pipelines in large-scale enterprise environments. Skilled in Azure DevOps, Terraform, Bicep, and ARM templates to build secure, scalable, and resilient cloud solutions—particularly within the energy and IT sectors, including mission-critical trading platforms. Proficient in PowerShell, Bash, and YAML with a strong focus on automation, infrastructure as code, and Git-based workflows. Recognized for proactive monitoring, effective incident response, and the ability to troubleshoot and optimize for performance, reliability, and operational efficiency.</p>
       </section>
 
       <!-- Right column -->
@@ -105,7 +68,7 @@
       </section>
 
       <!-- Experience -->
-      <section style="grid-column:1/-1">
+      <section class="full">
         <h2>Experience</h2>
         <div class="items">
           <div class="role">
@@ -120,7 +83,7 @@
                 <li>Provisioned and maintained Azure infrastructure via Terraform & GitOps, following IaC best practices.</li>
                 <li>Administered AVD and Azure networking (Firewall, App Gateway + WAF, NSGs, subnets).</li>
                 <li>Automated Azure VM provisioning with Terraform for consistency and scale.</li>
-                <li>Built Pipeline‑as‑Code with branching strategies & shared DSL, enabling feature toggles.</li>
+                <li>Built Pipeline-as-Code with branching strategies & shared DSL, enabling feature toggles.</li>
                 <li>Containerized apps with Docker, publishing to Azure Container Registry; orchestrated on AKS.</li>
                 <li>Implemented container security with Aqua Security (vulnerability scanning & compliance).</li>
                 <li>Worked with Azure Functions, Blob/Queue Storage, Cosmos DB, and Key Vault.</li>
@@ -141,9 +104,9 @@
               </div>
               <ul>
                 <li>Designed & deployed secure Azure infrastructure using ARM templates across SDLC stages.</li>
-                <li>Built end‑to‑end CI/CD in Azure DevOps to automate build, test, and deployment.</li>
+                <li>Built end-to-end CI/CD in Azure DevOps to automate build, test, and deployment.</li>
                 <li>Focused on availability, security, and compliance across compute, networking, storage, monitoring.</li>
-                <li>Automated with PowerShell & Bash; YAML for version‑controlled infra and pipelines.</li>
+                <li>Automated with PowerShell & Bash; YAML for version-controlled infra and pipelines.</li>
               </ul>
               <div class="chips">
                 <span class="chip">ARM</span><span class="chip">PowerShell</span><span class="chip">Bash</span><span class="chip">YAML</span>
@@ -181,7 +144,7 @@
               </div>
               <ul>
                 <li>IT operations support for traders & executives at BP IST; rapid incident triage & resolution.</li>
-                <li>Maintained high compliance standards; reduced downtime with disciplined break‑fix response.</li>
+                <li>Maintained high compliance standards; reduced downtime with disciplined break-fix response.</li>
                 <li>Supported trading apps (Reuters, X_Trader, Bloomberg), hardware & mobile device mgmt.</li>
               </ul>
             </div>
@@ -197,7 +160,7 @@
               <ul>
                 <li>Managed AD & Group Policies; delivered 2nd/3rd line support for traders & internal teams.</li>
                 <li>Installed trading apps (X_Trader, Bloomberg, Reuters Eikon, Web ICE, ICE Chat, OCS).</li>
-                <li>Handled encryption (Sophos, WAVE) on SED / non‑SED drives; VMware ops via vCenter.</li>
+                <li>Handled encryption (Sophos, WAVE) on SED / non-SED drives; VMware ops via vCenter.</li>
               </ul>
             </div>
           </div>
@@ -211,7 +174,7 @@
               </div>
               <ul>
                 <li>Installed ADSL/broadband; configured VLANs and Cisco routing/switching (OSPF, ACLs, NAT/PAT).</li>
-                <li>Commissioned & tested LLU circuits across multi‑vendor environments.</li>
+                <li>Commissioned & tested LLU circuits across multi-vendor environments.</li>
               </ul>
               <div class="chips">
                 <span class="chip">Cisco</span><span class="chip">OSPF</span><span class="chip">ACLs</span><span class="chip">NAT/PAT</span>
@@ -227,7 +190,7 @@
                 <div class="r-time">Jul 2008 – Dec 2009</div>
               </div>
               <ul>
-                <li>Provided 1st/2nd line support on‑site & remote; network troubleshooting for clients.</li>
+                <li>Provided 1st/2nd line support on-site & remote; network troubleshooting for clients.</li>
                 <li>Configured PPPoE/PPPoA, DSL routers; managed VLANs; monitored bandwidth (Cricket, MRTG).</li>
               </ul>
             </div>
@@ -241,8 +204,8 @@
                 <div class="r-time">Jul 2007 – Jun 2008</div>
               </div>
               <ul>
-                <li>Managed access‑layer networks; desktop support; AV/anti‑spam implementation.</li>
-                <li>Monitored email systems; PBX & Fax management; VPN‑based network security.</li>
+                <li>Managed access-layer networks; desktop support; AV/anti-spam implementation.</li>
+                <li>Monitored email systems; PBX & Fax management; VPN-based network security.</li>
               </ul>
             </div>
           </div>
@@ -253,9 +216,9 @@
       <section>
         <h2>Certifications</h2>
         <ul>
-          <li>Microsoft Certified: <strong>Azure Administrator Associate (AZ‑104)</strong></li>
-          <li>Microsoft Certified: <strong>DevOps Engineer Expert (AZ‑400)</strong></li>
-          <li>Microsoft Certified: <strong>Azure Solutions Architect Expert (AZ‑305)</strong></li>
+          <li>Microsoft Certified: <strong>Azure Administrator Associate (AZ-104)</strong></li>
+          <li>Microsoft Certified: <strong>DevOps Engineer Expert (AZ-400)</strong></li>
+          <li>Microsoft Certified: <strong>Azure Solutions Architect Expert (AZ-305)</strong></li>
           <li>HashiCorp Certified: <strong>Terraform Associate</strong></li>
         </ul>
       </section>
